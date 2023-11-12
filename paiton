@@ -1,0 +1,19 @@
+
+def change_color(number):
+    if number > 0:
+        colored_number = f"{Fore.RED}{number}{Style.RESET_ALL}"
+        message = "مثبت"
+    elif number < 0:
+        colored_number = f"{Fore.GREEN}{number}{Style.RESET_ALL}"
+        message = "منفی"
+    else:
+        colored_number = f"{Fore.YELLOW}{number}{Style.RESET_ALL}"
+        message = "صفر"
+    
+    print(f"عدد {colored_number} است و این عدد {message} است.")
+
+# عدد را از کاربر دریافت کنید
+input_number = float(input("لطفا یک عدد وارد کنید: "))
+
+change_color(input_number)
+
